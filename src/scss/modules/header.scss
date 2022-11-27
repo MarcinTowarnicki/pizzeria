@@ -1,0 +1,12 @@
+.header {
+    display: grid;
+    grid-template-columns: 2fr 5fr 1fr;
+    place-items: center;
+    &__logo--image {
+        max-width: 100%;
+        padding: 10px;
+    }
+    @media (max-width: $mobile) {
+        grid-template-columns: 2fr 1fr 2fr;
+    }
+}
